@@ -19,7 +19,7 @@ Things I have installed that you may find helpful(or will need to use some of th
 * [Feh](https://github.com/derf/feh)
 * [Wal](https://github.com/dylanaraps/wal)
 * [Neofetch](https://github.com/dylanaraps/neofetch)
-
+* There are also some fonts, I will include those in the .fonts folder
 ### What do they do?
 
 **i3-gaps** is my current *WM*.
