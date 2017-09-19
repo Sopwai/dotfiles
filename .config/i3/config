@@ -193,5 +193,4 @@ exec_always --no-startup-id $HOME/.config/polybar/launch.sh
 
 # gap time, woo
 gaps inner 05
-gaps outer 0
 smart_gaps on
