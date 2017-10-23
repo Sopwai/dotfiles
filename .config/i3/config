@@ -93,11 +93,11 @@ bindsym $mod+a focus parent
 #bindsym $mod+d focus child
 
 # setting workspace names ahead of time to prevent possible errors later
-set $workspace1 ""
-set $workspace2 ""
-set $workspace3 ""
-set $workspace4 ""
-set $workspace5 ""
+set $workspace1 "1"
+set $workspace2 "2"
+set $workspace3 "3"
+set $workspace4 "4"
+set $workspace5 "5"
 
 
 # switch to workspace
@@ -186,10 +186,17 @@ bindsym XF86KbdBrightnessDown exec echo 0 | tee /sys/class/leds/asus::kbd_backli
 bindsym XF86KbdBrightnessUp exec echo 3 | tee /sys/class/leds/asus::kbd_backlight/brightness
 
 #Keep your wallpaper after each session
-exec_always feh --bg-scale ~/Pictures/Aesthetic/02.jpg
+exec_always feh --bg-scale ~/Pictures/Wallpapers/simpsons.jpg
 
 #polybar on startup
 exec_always --no-startup-id $HOME/.config/polybar/launch.sh
+
+#enable compton on startup
+exec_always compton
+
+#wal 
+exec_always cd wal && ./wal -i ~/Pictures/Wallpapers/simpsons.jpg
+
 
 # gap time, woo
 gaps inner 05
