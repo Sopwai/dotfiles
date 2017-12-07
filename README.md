@@ -2,13 +2,13 @@
 These are my current dotfiles. This repo should be updated as I update my files, both for people to use and to back up the files. Feel free to take what you want from these files. Please do correct any spelling or grammar mistakes, English is NOT my first language.
 
 ## My system
-These files are being used on the Fedora 26 partition of my drive. I am using i3-gaps as my WM and Polybar as my status bar.
+These files are being used on the Fedora 26 partition of my drive, but should work with whichever distro you use. I am using i3-gaps as my WM and Polybar as my status bar.
 You will most likely not be able to directly copy and paste my files as yours, but you can go through and use the same settings(probably).
 If you do copy and paste anything directly as yours, before opening an issue please make sure that the name of your bar in the polybar config file ```[bar/whateveryouchoosetocallit]``` is the same in the launch.sh file
 ```# Launch bar1 and bar2
 polybar whateveryouchoosetocallit &
 ```
-or however it looks in your launch.sh file. I expect some may vary.
+or however it looks in your launch.sh file. I expect some may vary. Double check variables, too. 
 ### Dependencies
 Things I have installed that you may find helpful(or will need to use some of these files):
 
@@ -26,7 +26,7 @@ Things I have installed that you may find helpful(or will need to use some of th
 
 **Polybar** is what i use for my *status bar*.
 
-**Rofi** is a *window switcher* on steroids. I use it to replace **_dmenu_**.
+**Rofi** is a *window switcher*. I use it to replace **_dmenu_**.
 
 **Compton** is a *compositor* for **X**.
 
@@ -37,7 +37,7 @@ Things I have installed that you may find helpful(or will need to use some of th
 **Neofetch** displays system information. Not *really* needed, but cool to look at.
 
 
-## A bunch of neat people you should take a peep at
+## A bunch of neat people you should take a peep at, I've taken either chunks of config files or inspo from them
 
 Currently, some chunks of code have been taken from or inspired by:
 * [16BitBow](https://github.com/16BitBow/dotfiles)
