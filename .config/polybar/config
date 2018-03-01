@@ -4,18 +4,10 @@
 [colors]
 ;background = ${xrdb:color0:#222}
 background = ${xrdb:background}
-background-alt = #00000000
-background-unf = #00000000
-background-mod0 = #00000000
-background-mod1 = #00000000
-background-mod2 = #00000000
-background-alrt = #00000000
-test = #00000000
+
 ;foreground = ${xrdb:color7:#222}
 foreground = ${xrdb:foreground}
 foreground-alt = ${xrdb:foreground} 
-primary = #00000000
-secondary = #00000000
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 
 
@@ -37,9 +29,9 @@ font-2 = FontAwesome:fontformat=truetype:size=10;1
 ;border-size = 1
 border-color = ${colors.foreground}
 
-modules-left = i3
-modules-center = date weather
-modules-right = battery volume network
+modules-left = date weather battery network volume
+modules-center = 
+modules-right = i3
 
 ;tray-position = right
 ;tray-padding = 2
@@ -92,12 +84,12 @@ exec = python3 ~/.config/polybar/weather.py
 [module/i3]
 type = internal/i3
 
-ws-icon-0 = 1;
-ws-icon-1 = 2;
-ws-icon-2 = 3;
-ws-icon-3 = 4;
-ws-icon-4 = 5;
-ws-icon-default = 
+ws-icon-0 = 1;∘
+ws-icon-1 = 2;∘
+ws-icon-2 = 3;∘
+ws-icon-3 = 4;∘
+ws-icon-4 = 5;∘
+ws-icon-default = ∘
 
 label-unfocused-background = ${colors.background}
 label-unfocused-foreground = ${colors.foreground}
@@ -106,18 +98,18 @@ label-mode = %mode%
 label-mode-padding = 2
 label-mode-background = ${colors.background}
 
-label-focused = 
+label-focused = 
 label-focused-foreground = ${colors.foreground}
 label-focused-background = ${colors.background}
 label-focused-padding = 2
 
-label-unfocused = 
+label-unfocused = ∘
 label-unfocused-padding = 2
 
-label-visible = 
+label-visible = ∘
 label-visible-padding = 4
 
-label-urgent = 
+label-urgent = ∘
 label-urgent-foreground = ${colors.foreground}
 label-urgent-background = ${colors.background}
 label-urgent-underline = ${colors.foreground}
@@ -170,12 +162,12 @@ format-disconnected =
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;Date
 [module/date]
 type = internal/date
-interval = 5
+interval = 3
 
 date =
 date-alt = "%m/%d/%Y"
 
-time = "  %a %b %d, %I:%M %p"
+time = " %a %b %d, %I:%M %p"
 time-alt = %H:%M
 
 format-prefix-foreground = ${colors.foreground}
@@ -213,31 +205,31 @@ full-at = 99
 poll-interval = 5
 
 format-charging = <animation-charging> <label-charging>
-format-charging-padding = 2
+format-charging-padding = 1
 
 format-discharging = <ramp-capacity> <label-discharging>
-format-discharging-padding = 2
+format-discharging-padding = 1
 
 format-full = <ramp-capacity> <label-full>
-format-full-padding = 2
+format-full-padding = 1
 
-label-charging = %percentage%%
+label-charging = "%percentage%%"
 
-label-discharging = %percentage%%
+label-discharging = "%percentage%%"
 
-label-full = %percentage%%
+label-full = "%percentage%%"
 
-ramp-capacity-0 = 
-ramp-capacity-1 = 
-ramp-capacity-2 = 
-ramp-capacity-3 = 
-ramp-capacity-4 = 
+ramp-capacity-0 = " "
+ramp-capacity-1 = " "
+ramp-capacity-2 = " "
+ramp-capacity-3 = " "
+ramp-capacity-4 = " "
 
-animation-charging-0 = 
-animation-charging-1 = 
-animation-charging-2 = 
-animation-charging-3 = 
-animation-charging-4 = 
+animation-charging-0 = " "
+animation-charging-1 = " "
+animation-charging-2 = " "
+animation-charging-3 = " "
+animation-charging-4 = " "
 animation-charging-framerate = 500
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
