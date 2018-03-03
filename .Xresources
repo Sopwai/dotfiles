@@ -1,58 +1,52 @@
-! special
-*.foreground:   #C5A7E2
-*.background:   #221124
-*.cursorColor:  #C5A7E2
-
-! black
-*.color0:       #221124
-*.color8:       #C5A7E2
-
-! red
-*.color1:       #A14D64
-*.color9:       #C5A7E2
-
-! green
-*.color2:       #52368A
-*.color10:      #f29372
-
-! yellow
-*.color3:       #5D569A
-*.color11:      #aeaee6
-
-! blue
-*.color4:       #474BBD
-*.color12:      #e655bf
-
-! magenta
-*.color5:       #AB58A6
-*.color13:      #32909b
-
-! cyan
-*.color6:       #A08F89
-*.color14:      #f63cc9
-
-! white
-*.color7:       #C5A7E2
-*.color15:      #3c95a0
-
-! terminal transparency
-URxvt*transparent: true
-URxvt*shading: 3
-
-! common extensions 
-URxvt.perl-ext-common: default,matcher,resize-font,tabbed
-URxvt.tabbed.tabbar-fg: 3
-URxvt.tabbed.tabbar-bg: 0
-URxvt.tabbed.tab-fg: 0
-URxvt.tabbed.tab-bg: 3
-
-
-! no scrollbar
-URxvt.scrollBar: false
-
-! clickable urls
+!urxvt
+URxvt*foreground: #34F5E6
+URxvt*background: #0D0F12
+URxvt*cursorColor: #34F5E6
+URxvt.scrollBar: false 
+URxvt.perl-ext-common: default,matcher,resize-font
 URxvt.url-launcher: /usr/bin/xdg-open
 URxvt.matcher.button: 1
-
-! font
 URxvt.font: xft:GohuFont-Medium:size=14
+!colors
+*background: #0D0F12
+*.color0: #0D0F12
+*foreground: #4B4F53
+*.color1: #4B4F53
+*color2: #B82C5C
+*.color2: #B82C5C
+*color3: #49B963
+*.color3: #49B963
+*color4: #2C5D9C
+*.color4: #2C5D9C
+*color5: #D24098
+*.color5: #D24098
+*color6: #2CC3B0
+*.color6: #2CC3B0
+*color7: #34F5E6
+*.color7: #34F5E6
+*color8: #666666
+*.color8: #666666
+*color9: #4B4F53
+*.color9: #4B4F53
+*color10: #B82C5C
+*.color10: #B82C5C
+*color11: #49B963
+*.color11: #49B963
+*color12: #2C5D9C
+*.color12: #2C5D9C
+*color13: #D24098
+*.color13: #D24098
+*color14: #2CC3B0
+*.color14: #2CC3B0
+*color15: #34F5E6
+*.color15: #34F5E6
+*color66: #0D0F12
+
+!rofi
+rofi.color-window: argb:FF0D0F12, #0D0F12, #B82C5C
+rofi.color-normal: argb:FF0D0F12, #34F5E6, #0D0F12, #B82C5C, #0D0F12
+rofi.color-active: argb:FF0D0F12, #34F5E6, #0D0F12, #B82C5C, #0D0F12
+rofi.color-urgent: argb:FF0D0F12, #4B4F53, #0D0F12, #4B4F53, #34F5E6
+rofi.separator-style: none
+rofi.hide-scrollbar: true
+rofi.bw: 0
