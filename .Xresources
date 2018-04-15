@@ -1,52 +1,60 @@
 !urxvt
-URxvt*foreground: #34F5E6
-URxvt*background: #0D0F12
-URxvt*cursorColor: #34F5E6
+URxvt*foreground: #CFB7B1
+URxvt*background: #0A0405
+URxvt*cursorColor: #CFB7B1
 URxvt.scrollBar: false 
 URxvt.perl-ext-common: default,matcher,resize-font
 URxvt.url-launcher: /usr/bin/xdg-open
 URxvt.matcher.button: 1
 URxvt.font: xft:GohuFont-Medium:size=14
 !colors
-*background: #0D0F12
-*.color0: #0D0F12
-*foreground: #4B4F53
-*.color1: #4B4F53
-*color2: #B82C5C
-*.color2: #B82C5C
-*color3: #49B963
-*.color3: #49B963
-*color4: #2C5D9C
-*.color4: #2C5D9C
-*color5: #D24098
-*.color5: #D24098
-*color6: #2CC3B0
-*.color6: #2CC3B0
-*color7: #34F5E6
-*.color7: #34F5E6
+*background:  #0A0405
+*.color0: #0A0405
+*foreground: #A25F5F
+*.color1: #4C2C2C
+*color2: #51453A
+*.color2: #51453A
+*color3: #472D50
+*.color3: #472D50
+*color4: #61534E
+*.color4: #61534E
+*color5: #A24549
+*.color5: #A24549
+*color6: #916093
+*.color6: #916093
+*color7: #CFB7B1
+*.color7: #CFB7B1
 *color8: #666666
 *.color8: #666666
-*color9: #4B4F53
-*.color9: #4B4F53
-*color10: #B82C5C
-*.color10: #B82C5C
-*color11: #49B963
-*.color11: #49B963
-*color12: #2C5D9C
-*.color12: #2C5D9C
-*color13: #D24098
-*.color13: #D24098
-*color14: #2CC3B0
-*.color14: #2CC3B0
-*color15: #34F5E6
-*.color15: #34F5E6
-*color66: #0D0F12
+*color9: #4C2C2C
+*.color9: #4C2C2C
+*color10: #51453A
+*.color10: #51453A
+*color11: #472D50
+*.color11: #472D50
+*color12: #61534E
+*.color12: #61534E
+*color13: #A24549
+*.color13: #A24549
+*color14: #916093
+*.color14: #916093
+*color15: #CFB7B1
+*.color15: #CFB7B1
+*color66: #0A0405
 
 !rofi
-rofi.color-window: argb:FF0D0F12, #0D0F12, #B82C5C
-rofi.color-normal: argb:FF0D0F12, #34F5E6, #0D0F12, #B82C5C, #0D0F12
-rofi.color-active: argb:FF0D0F12, #34F5E6, #0D0F12, #B82C5C, #0D0F12
-rofi.color-urgent: argb:FF0D0F12, #4B4F53, #0D0F12, #4B4F53, #34F5E6
-rofi.separator-style: none
+
+!                  bg       border   separator      
+rofi.color-window: #0A0405, #0A0405, #51453A
+
+!                  bg       fg       bgalt    hlbg     hlfg
+rofi.color-normal: #0A0405, #CFB7B1, #0A0405, #51453A, #0A0405
+rofi.color-active: #0A0405, #CFB7B1, #0A0405, #51453A, #0A0405
+rofi.color-urgent: #0A0405, #4C2C2C, #0A0405, #4C2C2C, #CFB7B1
+
+rofi.separator-style: solid
 rofi.hide-scrollbar: true
-rofi.bw: 0
+rofi.font: GohuFont-Meduim 14
+rofi.lines: 5
+rofi.width: 30
+rofi.location: 0
