@@ -196,4 +196,7 @@ bindsym $mod+Shift+s exec xrandr --output HDMI-1 --auto --left-of eDP-1
 bindsym $mod+c exec xrandr --output HDMI-1 --auto --off
 
 #screenshot
-bindsym $mod+Shift+p exec scrot
+bindsym $mod+p exec scrot
+
+#wal test
+exec_always ~/wal/./wal -i ~/Pictures/city8.jpg
